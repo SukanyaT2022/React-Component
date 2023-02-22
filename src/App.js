@@ -1,32 +1,45 @@
 import { Box, Image, Button,Text } from '@chakra-ui/react';
 import React from 'react';
+import { FaHome } from 'react-icons/fa';
 
 const App = () => {
   return (
     // control whole box
     <Box display="flex">
       {/* left side section */}
-      <Box bg="tomato" width="25%" py="20px" height="600px" textAlign="center">
-        <Box pb="20px">
-          <h5>Home</h5>
-        </Box>
-        <Box pb="20px">
-          <h5>Explore</h5>
-        </Box>
-        <Box pb="20px">
-          <h5>Notifications</h5>
-        </Box>
-        <Box pb="20px">
-          <h5>Bookmarks</h5>
-        </Box>
+      {/* <Box bg="tomato" width="25%" py="20px" height="600px" textAlign="center"> */}
+      <Box width="300px">
+     
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2} py="30px">
+            <FaHome />
+            <Text>Home</Text>
+          </Box>
 
-        <Box pb="20px">
-          <h5>Profile</h5>
-        </Box>
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2}>
+            <FaHome />
+            <Text>Home</Text>
+          </Box>
 
-        <Box pb="20px">
-          <h5>More</h5>
-        </Box>
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2}py="30px">
+            <FaHome />
+            <Text>Home</Text>
+          </Box>
+
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2}>
+            <FaHome />
+            <Text>Home</Text>
+          </Box>
+
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2} py="30px">
+            <FaHome />
+            <Text>Home</Text>
+          </Box>
+
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2}>
+            <FaHome />
+            <Text>Home</Text>
+          </Box>
+        
       </Box>
 
       {/* middle section */}
@@ -43,35 +56,29 @@ const App = () => {
             height="300px"
             objectFit="cover"
             alt="spiderman"
-
             sx={{
-              position: "relative",
-              top:"80px"
-             }}
-
+              position: 'relative',
+              top: '80px',
+            }}
           />
         </Box>
         <Image
-  borderRadius='full'
-  boxSize='100px'
-  src='https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
-  alt='Dan Abramov'
-  sx={{
-   position: "absolute",
-   bottom:"50px"
-  }}
+          borderRadius="full"
+          boxSize="100px"
+          src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          alt="Dan Abramov"
+          sx={{
+            position: 'absolute',
+            bottom: '50px',
+          }}
+        />
 
-/>
-
-{/* when put sx it will work as css
+        {/* when put sx it will work as css
 sx={{
    position: "absolute",
    top:"80px"
   }} */}
 
-
-
-    
         {/* <Box display="flex">
   <Box width="50%" height="100px">
 <h5>Moji</h5>
@@ -92,125 +99,118 @@ sx={{
         paddingLeft="30px"
       >
         <Box pb="20px">
-        <Text as='b'>Who to follow</Text>
+          <Text as="b">Who to follow</Text>
         </Box>
         <hr></hr>
 
+        <Box display="flex" m={2} gap={5}>
+          <Image
+            borderRadius="full"
+            boxSize="50px"
+            src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt="Dan Abramov"
+          />
+          <Box>
+            <Text fontSize="15px">Roji</Text>
+            <Text fontSize="15px" fontWeight="light">
+              @manikanD
+            </Text>
+          </Box>
 
-
-        <Box  display="flex" m={2} gap={5}>
-         
-<Image
-  borderRadius='full'
-  boxSize='50px'
-  src='https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
-  alt='Dan Abramov'
-/>
-<Box>
-<Text fontSize='15px'  >
-Roji 
-
-</Text>
-<Text fontSize='15px' fontWeight="light"  >
-@manikanD
-
-</Text>
-
-</Box>
-
-<Box>
-<Button color="red" border="1px solid red" borderRadius="30px" px="20px">Follow</Button>
-
-</Box>
-
+          <Box>
+            <Button
+              color="red"
+              border="1px solid red"
+              borderRadius="30px"
+              px="20px"
+            >
+              Follow
+            </Button>
+          </Box>
         </Box>
 
         <hr></hr>
-        <Box  display="flex" m={2} gap={5}>
-         
-         <Image
-           borderRadius='full'
-           boxSize='50px'
-           src='https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
-           alt='Dan Abramov'
-         />
-         <Box>
-         <Text fontSize='15px'  >
-         Roji 
-         
-         </Text>
-         <Text fontSize='15px' fontWeight="light"  >
-         @manikanD
-         
-         </Text>
-         
-         </Box>
-         
-         <Box>
-         <Button color="red" border="1px solid red" borderRadius="30px" px="20px">Follow</Button>
-         
-         </Box>
-         
-                 </Box>
+        <Box display="flex" m={2} gap={5}>
+          <Image
+            borderRadius="full"
+            boxSize="50px"
+            src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt="Dan Abramov"
+          />
+          <Box>
+            <Text fontSize="15px">Roji</Text>
+            <Text fontSize="15px" fontWeight="light">
+              @manikanD
+            </Text>
+          </Box>
+
+          <Box>
+            <Button
+              color="red"
+              border="1px solid red"
+              borderRadius="30px"
+              px="20px"
+            >
+              Follow
+            </Button>
+          </Box>
+        </Box>
 
         <hr></hr>
-        <Box  display="flex" m={2} gap={5}>
-         
-<Image
-  borderRadius='full'
-  boxSize='50px'
-  src='https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
-  alt='Dan Abramov'
-/>
-<Box>
-<Text fontSize='15px'  >
-Roji 
+        <Box display="flex" m={2} gap={5}>
+          <Image
+            borderRadius="full"
+            boxSize="50px"
+            src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt="Dan Abramov"
+          />
+          <Box>
+            <Text fontSize="15px">Roji</Text>
+            <Text fontSize="15px" fontWeight="light">
+              @manikanD
+            </Text>
+          </Box>
 
-</Text>
-<Text fontSize='15px' fontWeight="light"  >
-@manikanD
-
-</Text>
-
-</Box>
-
-<Box>
-<Button color="red" border="1px solid red" borderRadius="30px" px="20px">Follow</Button>
-
-</Box>
-
+          <Box>
+            <Button
+              color="red"
+              border="1px solid red"
+              borderRadius="30px"
+              px="20px"
+            >
+              Follow
+            </Button>
+          </Box>
         </Box>
 
         <hr></hr>
 
+        <Box display="flex" m={2} gap={5}>
+          <Image
+            borderRadius="full"
+            boxSize="50px"
+            src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            alt="Dan Abramov"
+          />
+          <Box>
+            <Text fontSize="15px">Roji</Text>
+            <Text fontSize="15px" fontWeight="light">
+              @manikanD
+            </Text>
+          </Box>
+          <hr></hr>
 
-        <Box  display="flex" m={2} gap={5}>
-         
-         <Image
-           borderRadius='full'
-           boxSize='50px'
-           src='https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
-           alt='Dan Abramov'
-         />
-         <Box>
-         <Text fontSize='15px'  >
-         Roji 
-         
-         </Text>
-         <Text fontSize='15px' fontWeight="light"  >
-         @manikanD
-         
-         </Text>
-         
-         </Box>
-         <hr></hr>
-         
-         <Box>
-         <Button color="red" border="1px solid red" borderRadius="30px" px="20px">Follow</Button>
-         
-         </Box>
-         
-                 </Box>
+          <Box>
+            <Button
+              color="red"
+              border="1px solid red"
+              borderRadius="30px"
+              px="20px"
+            >
+              Follow
+            </Button>
+          </Box>
+        </Box>
         <hr></hr>
       </Box>
     </Box>
