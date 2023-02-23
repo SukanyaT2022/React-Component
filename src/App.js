@@ -41,9 +41,10 @@ const App = () => {
           </Box>
         
       </Box>
+    
 
       {/* middle section */}
-      <Box bg="green" width="50%" py="20px" height="600px">
+      <Box bg="green" width="50%" py="20px" height="850px">
         <Box paddingLeft="30px" my={4}>
           <h5 font-weight="bolder">SpidermanHaHa</h5>
           <h6>9 Tweets</h6>
@@ -62,6 +63,7 @@ const App = () => {
             }}
           />
         </Box>
+        <Box marginLeft="30px">
         <Image
           borderRadius="full"
           boxSize="100px"
@@ -69,7 +71,7 @@ const App = () => {
           alt="Dan Abramov"
           sx={{
             position: 'absolute',
-            bottom: '50px',
+      
           }}
         />
 
@@ -79,16 +81,57 @@ sx={{
    top:"80px"
   }} */}
 
-        {/* <Box display="flex">
-  <Box width="50%" height="100px">
-<h5>Moji</h5>
-<h5>This guy is so coll.</h5>
+        
+</Box> 
+
+<Box mt="160px" fontWeight="bold" marginLeft="30px">
+
+<Text mb={2}>Look at Spider Man</Text>
+<Text>@SpidermanFan</Text>
+<Text mt={2}>Love to built this clone</Text>
+
+<Box display="flex">
+<FaHome />
+ <Text>New York, USA</Text>
 </Box>
 
-<Box width="50%" height="100px">
-<Button colorScheme='blue' >Follow</Button>
-</Box> */}
+<Box display="flex" >
+<Text>999 followers</Text>
+ <Text>90 following</Text>
+</Box>
       </Box>
+
+
+    
+
+      <hr></hr>
+{/* below line bottom part middle section */}
+
+
+<Box display="flex"  pt="30px">
+<Image
+          borderRadius="full"
+        height="50px"
+        width="50px"
+          src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          alt="Dan Abramov"
+        />
+<Box display="flex" ml="10px" gap="10px">
+<Text>Look at Spider Man</Text>
+<Text>@SpidermanFan</Text>
+<Text>2 months ago</Text>
+
+</Box>
+
+
+</Box> 
+
+<Box>
+<text> The epic movie</text>
+</Box>
+
+
+</Box>
 
       {/* right section */}
       <Box
